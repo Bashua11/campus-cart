@@ -1,0 +1,16 @@
+# Rough sketch workflow for CampusCart
+rough-sketch/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Python virtual environments
+venv/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
