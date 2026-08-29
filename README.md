@@ -57,6 +57,17 @@ Milk Jugs                   2
 Total Items:              26
 ```
 
+## User Personas
+
+### Ada - Student Fashion Vendor
+
+Ada is a university student who sells clothes and shoes to other students on campus. She needs a simple way to track available inventory, monitor sales, and reduce errors when managing customer purchases.
+
+**Needs:**
+- Keep track of available stock
+- Record sales easily
+- Calculate customer purchases accurately
+- Generate receipts for customers
 ## Proposed Feature Milestones
 
 ### Milestone 1: Inventory Management
