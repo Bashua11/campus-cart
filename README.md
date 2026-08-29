@@ -22,6 +22,7 @@ CampusCart is designed for:
 - Easy sales tracking
 - Simple inventory management
 - Quick and accurate receipt generation
+CampusCart Pricing: ₦1,500 monthly subscription.
 
 ## CLI Mockup
 
