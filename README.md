@@ -15,6 +15,7 @@ Most vendors around campus still rely on notebooks or scattered phone notes to k
 - Small resellers operating out of dorm rooms
 
 **Example Persona:** A vendor keeps handwritten records of stock and daily sales, frequently losing track of what's left in inventory and running into disagreements with customers over receipts.
+With CampusCart, this vendor could track stock accurately and issue instant receipts, reducing disputes and lost sales.
 
 ## Key Value Propositions
 | Value | Why It Matters |
