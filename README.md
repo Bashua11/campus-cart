@@ -56,3 +56,24 @@ Milk Jugs                   2
 --------------------------------
 Total Items:              26
 ```
+
+## Proposed Feature Milestones
+
+### Milestone 1: Inventory Management
+- Add and remove products
+- Update product quantities
+- View available stock
+
+### Milestone 2: Sales and Cart Management
+- Add products to a customer's cart
+- Calculate cart totals
+- Record completed sales
+
+### Milestone 3: Receipt Generation
+- Generate a simple receipt after checkout
+- Display purchased items, quantities, and total cost
+
+### Milestone 4: Sales Summary
+- View total sales
+- Track products sold
+- Review remaining inventory
