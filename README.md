@@ -22,6 +22,7 @@ CampusCart is designed for:
 - Easy sales tracking
 - Simple inventory management
 - Quick and accurate receipt generation
+CampusCart Pricing: ₦1,000 monthly subscription.
 
 ## CLI Mockup
 
@@ -67,3 +68,23 @@ Ada is a university student who sells clothes and shoes to other students on cam
 - Record sales easily
 - Calculate customer purchases accurately
 - Generate receipts for customers
+## Proposed Feature Milestones
+
+### Milestone 1: Inventory Management
+- Add and remove products
+- Update product quantities
+- View available stock
+
+### Milestone 2: Sales and Cart Management
+- Add products to a customer's cart
+- Calculate cart totals
+- Record completed sales
+
+### Milestone 3: Receipt Generation
+- Generate a simple receipt after checkout
+- Display purchased items, quantities, and total cost
+
+### Milestone 4: Sales Summary
+- View total sales
+- Track products sold
+- Review remaining inventory
