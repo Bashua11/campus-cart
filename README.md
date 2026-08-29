@@ -12,7 +12,7 @@ Most vendors around campus still rely on notebooks or scattered phone notes to k
 ## Target Audience
 - Independent student businesses (food, snacks, accessories, printing)
 - Vendors running pop-up stalls at campus events
-- Small resellers operating out of dorm rooms
+- Small dorm-based resellers 
 
 **Example Persona:** A vendor keeps handwritten records of stock and daily sales, frequently losing track of what's left in inventory and running into disagreements with customers over receipts.
 
