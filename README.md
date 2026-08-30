@@ -18,13 +18,18 @@ a customer argues about what they paid, you have nothing to show them.
 - Pop-up stalls at campus events
 - Small dorm-based resellers
 
+**Persona:** A student sells snacks between lectures and keeps her stock and
+sales in a notebook. On a busy day she loses track of what's left and ends up
+arguing with a customer over change. With CampusCart she'd know her exact stock
+and hand over a receipt on the spot.
+
 ## Why It Helps
 
-| Value               | Why it matters                             |
-| ------------------- | ------------------------------------------ |
-| Simple CLI          | Works with no technical background         |
-| Accurate stock      | No more guessing what's left               |
-| Instant receipts    | A record for you and the customer          |
+| Value            | Why it matters                     |
+| ---------------- | ---------------------------------- |
+| Simple CLI       | Works with no technical background |
+| Accurate stock   | No more guessing what's left       |
+| Instant receipts | A record for you and the customer  |
 
 ## Proposed CLI Menu
 
