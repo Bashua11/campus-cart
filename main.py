@@ -93,8 +93,46 @@ while True:
 
             print(f"Cart Total: ${cart_total:.2f}")
 
-    elif choice == "4":
-        print("Checkout")
+        elif choice == "4":
+        if not cart:
+            print("Your cart is empty. Add items before checkout.")
+            continue
+
+        subtotal = 0
+
+        for item in cart:
+            subtotal += item["subtotal"]
+
+        # Apply a 10% discount to orders over $20
+        if subtotal > 20:
+            discount = subtotal * 0.10
+        else:
+            discount = 0
+
+        total = subtotal - discount
+
+        print("\n===== CAMPUSCART RECEIPT =====")
+
+        for item in cart:
+            print(
+                f"{item['name']} | "
+                f"Qty: {item['qty']} | "
+                f"${item['subtotal']:.2f}"
+            )
+
+        print("------------------------------")
+        print(f"Subtotal: ${subtotal:.2f}")
+        print(f"Discount: ${discount:.2f}")
+        print(f"Total: ${total:.2f}")
+        print("------------------------------")
+        print("Thank you for shopping with CampusCart!")
+
+        # Deduct purchased quantities from inventory
+        for item in cart:
+            inventory[item["id"]]["stock"] -= item["qty"]
+
+        # Empty the cart after successful checkout
+        cart.clear()
 
     elif choice == "5":
         print("Thank you for using CampusCart!")
