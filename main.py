@@ -38,11 +38,60 @@ while True:
                 f"Stock: {product['stock']}"
             )
 
-    elif choice == "2":
-        print("Add to cart")
+        elif choice == "2":
+        product_id = input("Enter the product ID: ").strip()
 
-    elif choice == "3":
-        print("View cart")
+        if product_id not in inventory:
+            print("Invalid product ID.")
+            continue
+
+        try:
+            quantity = int(input("Enter quantity: "))
+
+            if quantity <= 0:
+                print("Quantity must be greater than zero.")
+                continue
+
+            product = inventory[product_id]
+
+            if quantity > product["stock"]:
+                print(
+                    f"Insufficient stock. "
+                    f"Only {product['stock']} available."
+                )
+                continue
+
+            subtotal = product["price"] * quantity
+
+            cart.append({
+                "id": product_id,
+                "name": product["name"],
+                "price": product["price"],
+                "qty": quantity,
+                "subtotal": subtotal
+            })
+
+            print(f"{quantity} x {product['name']} added to cart.")
+
+        except ValueError:
+            print("Invalid quantity. Please enter a number.")
+
+        elif choice == "3":
+        if not cart:
+            print("Your cart is empty.")
+        else:
+            print("\n===== YOUR CART =====")
+            cart_total = 0
+
+            for item in cart:
+                print(
+                    f"{item['name']} | "
+                    f"Qty: {item['qty']} | "
+                    f"${item['subtotal']:.2f}"
+                )
+                cart_total += item["subtotal"]
+
+            print(f"Cart Total: ${cart_total:.2f}")
 
     elif choice == "4":
         print("Checkout")
