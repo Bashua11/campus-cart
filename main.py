@@ -37,7 +37,7 @@ while True:
                 f"${product['price']:.2f} | "
                 f"Stock: {product['stock']}"
             )
-
+            
         elif choice == "2":
         product_id = input("Enter the product ID: ").strip()
 
