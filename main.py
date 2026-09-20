@@ -54,12 +54,20 @@ while True:
 
             product = inventory[product_id]
 
-            if quantity > product["stock"]:
-                print(
-                    f"Insufficient stock. "
-                    f"Only {product['stock']} available."
-                )
-                continue
+            quantity_in_cart = 0
+
+for item in cart:
+    if item["id"] == product_id:
+        quantity_in_cart += item["qty"]
+
+available_stock = product["stock"] - quantity_in_cart
+
+if quantity > available_stock:
+    print(
+        f"Insufficient stock. "
+        f"Only {available_stock} available."
+    )
+    continue
 
             subtotal = product["price"] * quantity
 
