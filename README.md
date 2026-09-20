@@ -35,11 +35,14 @@ and hand over a receipt on the spot.
 
 ```text
 === CampusCart ===
-1. View Inventory
-2. Add Product
-3. Start New Sale
-4. Generate Receipt
+1. View Catalog
+2. Add to Cart
+3. View Cart
+4. Checkout
 5. Exit
 
 Choose an option:
 ```
+
+## CLI Interface
+<img width="1009" height="1225" alt="image" src="https://github.com/user-attachments/assets/4ce86cd7-9485-44b5-a22e-f8427055bfca" />
