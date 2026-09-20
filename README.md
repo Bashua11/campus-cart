@@ -88,3 +88,39 @@ Ada is a university student who sells clothes and shoes to other students on cam
 - View total sales
 - Track products sold
 - Review remaining inventory
+
+
+## Stage 2: Procedural Python CLI
+
+In Stage 2, I developed CampusCart into an interactive command-line
+shopping application using procedural Python.
+
+### Features Implemented
+
+- View the available product catalog with prices and stock levels
+- Add products to the cart using product IDs
+- Select product quantities
+- View cart items and total cost
+- Validate product IDs and quantity inputs
+- Prevent purchases that exceed available stock
+- Apply a 10% discount to orders above $20
+- Generate an itemized checkout receipt
+- Update inventory after checkout
+- Exit the application through the main menu
+
+### Python Concepts Applied
+
+- Dictionaries and nested dictionaries
+- Lists
+- `while` and `for` loops
+- `if`, `elif`, and `else`
+- User input and type conversion
+- `try` and `except` for input validation
+- Calculations and string formatting
+- Git and GitHub version control
+
+## CLI Demo
+
+The screenshot below shows CampusCart running from the command line.
+
+![CampusCart CLI Demo](campuscart-cli.png)
