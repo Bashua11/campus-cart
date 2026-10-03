@@ -52,7 +52,3 @@ def get_audit_summary(logs):
         "failed": len(failed)
     }
 
-
-print(result)
-print(transaction_logs)
-print(get_audit_summary(transaction_logs))
