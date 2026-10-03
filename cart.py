@@ -1,3 +1,11 @@
+"""
+cart.py - CampusCart cart and receipt module.
+Handles adding items to the cart, calculating totals,
+and streaming receipt lines.
+Author: Luqman
+"""
+
+
 def add_to_cart(cart, inventory, item_id, quantity):
     """Add an item to the cart if it exists and has enough stock."""
     if item_id not in inventory:
