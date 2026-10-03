@@ -43,19 +43,20 @@ def log_transaction(func):
     return wrapper
 
     def get_audit_summary(logs):
-        completed_logs = list(
-            filter(lambda log: log["status"] == "completed", logs)
-    )
+    completed_logs = list(filter(
+        lambda log: log["status"] == "completed", logs
+    ))
 
-    failed_logs = list(
-        filter(lambda log: log["status"] == "failed", logs)
-    )
+    failed_logs = list(filter(
+        lambda log: log["status"] == "failed", logs
+    ))
 
     return {
         "total_transactions": len(logs),
         "completed": len(completed_logs),
         "failed": len(failed_logs)
     }
+
 
 @log_transaction
 def test_checkout(item, quantity):
@@ -64,8 +65,7 @@ def test_checkout(item, quantity):
 
 
 result = test_checkout("Notebook", 2)
+
 print(result)
-
 print(transaction_logs)
-
 print(get_audit_summary(transaction_logs))
