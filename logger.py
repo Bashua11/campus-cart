@@ -6,7 +6,7 @@ transaction_logs = []
 def log_transaction(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     print(f"[{timestamp}] Starting: {func.__name__}")
 
