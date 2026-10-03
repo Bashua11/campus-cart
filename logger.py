@@ -53,24 +53,6 @@ def get_audit_summary(logs):
     }
 
 
-@log_transaction
-def test_checkout(item, quantity):
-    print(f"Buying {quantity} {item}")
-    return "Purchase successful"
-
-@log_transaction
-def test_failed_checkout():
-    raise ValueError("Not enough stock")
-
-
-
-result = test_checkout("Notebook", 2)
-
-try:
-    test_failed_checkout()
-except ValueError:
-    pass
-    
 print(result)
 print(transaction_logs)
 print(get_audit_summary(transaction_logs))
