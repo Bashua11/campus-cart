@@ -43,8 +43,8 @@ def log_transaction(func):
     return wrapper
 
     def get_audit_summary(logs):
-    completed_logs = list(
-        filter(lambda log: log["status"] == "completed", logs)
+        completed_logs = list(
+            filter(lambda log: log["status"] == "completed", logs)
     )
 
     failed_logs = list(
