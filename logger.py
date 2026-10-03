@@ -46,11 +46,11 @@ def log_transaction(func):
         completed = list(filter(lambda log: log["status"] == "completed", logs))
         failed = list(filter(lambda log: log["status"] == "failed", logs))
 
-    return {
-        "total_transactions": len(logs),
-        "completed": len(completed),
-        "failed": len(failed)
-    }
+        return {
+            "total_transactions": len(logs),
+            "completed": len(completed),
+            "failed": len(failed)
+        }
 
 
 @log_transaction
