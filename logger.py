@@ -14,30 +14,31 @@ def log_transaction(func):
         try:
             result = func(*args, **kwargs)
 
-        log_entry = {
-            "function": func.__name__,
-            "timestamp": timestamp,
-            "status": "completed"
-        }
+            log_entry = {
+                "function": func.__name__,
+                "timestamp": timestamp,
+                "status": "completed"
+            }
 
-        transaction_logs.append(log_entry)
+            transaction_logs.append(log_entry)
 
-        print(f"[{timestamp}] Completed: {func.__name__}")
+            print(f"[{timestamp}] Completed: {func.__name__}")
 
-        return result
+            return result
 
-    except Exception as error:
-        log_entry = {
-            "function": func.__name__,
-            "timestamp": timestamp,
-            "status": "failed",
-            "error": str(error)
-        }
+        except Exception as error:
+            log_entry = {
+                "function": func.__name__,
+                "timestamp": timestamp,
+                "status": "failed",
+                "error": str(error)
+            }
 
-        transaction_logs.append(log_entry)
+            transaction_logs.append(log_entry)
 
-        print(f"[{timestamp}] Failed: {func.__name__}")
-        raise
+            print(f"[{timestamp}] Failed: {func.__name__}")
+
+            raise
 
     return wrapper
 
