@@ -3,15 +3,16 @@ from functools import wraps
 
 transaction_logs = []
 
+
 def log_transaction(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    print(f"[{timestamp}] Starting: {func.__name__}")
+        print(f"[{timestamp}] Starting: {func.__name__}")
 
-    try:
-        result = func(*args, **kwargs)
+        try:
+            result = func(*args, **kwargs)
 
         log_entry = {
             "function": func.__name__,
